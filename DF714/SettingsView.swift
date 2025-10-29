@@ -273,3 +273,4 @@ struct AchievementRowView: View {
     SettingsView()
         .environmentObject(DataManager())
 }
+

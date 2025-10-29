@@ -59,3 +59,4 @@ extension View {
         self.modifier(TasteLogCardStyle())
     }
 }
+

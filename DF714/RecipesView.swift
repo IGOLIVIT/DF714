@@ -234,3 +234,4 @@ struct RecipeCard: View {
     RecipesView()
         .environmentObject(DataManager())
 }
+

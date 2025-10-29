@@ -403,3 +403,4 @@ struct TimePickerColumn: View {
     TimerDetailView(duration: 300, recipeName: "Soft Boiled Eggs")
         .environmentObject(DataManager())
 }
+

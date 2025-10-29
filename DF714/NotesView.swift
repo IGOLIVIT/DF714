@@ -138,8 +138,10 @@ struct NotesView: View {
                             LazyVStack(spacing: 16) {
                                 ForEach(filteredNotes) { note in
                                     NoteCard(note: note) {
-                                        selectedNote = note
-                                        showingEditNote = true
+                                        DispatchQueue.main.async {
+                                            selectedNote = note
+                                            showingEditNote = true
+                                        }
                                     } deleteAction: {
                                         dataManager.deleteNote(note)
                                     }
@@ -236,7 +238,9 @@ struct NoteCard: View {
         .padding(16)
         .tasteLogCard()
         .onTapGesture {
-            editAction()
+            DispatchQueue.main.async {
+                editAction()
+            }
         }
         .alert("Delete Note", isPresented: $showingDeleteAlert) {
             Button("Cancel", role: .cancel) { }
@@ -268,3 +272,4 @@ struct NoteCard: View {
     NotesView()
         .environmentObject(DataManager())
 }
+

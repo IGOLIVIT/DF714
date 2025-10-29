@@ -71,3 +71,4 @@ struct MainTabView: View {
     MainTabView()
         .environmentObject(DataManager())
 }
+

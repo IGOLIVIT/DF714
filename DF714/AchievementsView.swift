@@ -250,3 +250,4 @@ struct AchievementCard: View {
     AchievementsView()
         .environmentObject(DataManager())
 }
+

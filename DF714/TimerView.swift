@@ -210,3 +210,4 @@ struct TimerPresetCard: View {
     TimerView()
         .environmentObject(DataManager())
 }
+

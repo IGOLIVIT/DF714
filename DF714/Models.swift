@@ -116,3 +116,4 @@ struct UserStats: Codable {
         daysActive.insert(today)
     }
 }
+

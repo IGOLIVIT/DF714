@@ -227,3 +227,4 @@ struct SectionHeader: View {
     ))
     .environmentObject(DataManager())
 }
+
